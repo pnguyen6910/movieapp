@@ -50,12 +50,8 @@
     }
   }
   buttonsView.on('click', '.movie-btn', function(event) {
-    var title = $(this).text()
-    $ajax({
-      url: queryURL + '&t=' + title
-    }).then(function(movieData) {
-      
-    })
+    console.log($(this).text())
+
   })
     console.log(movies)
     // YOUR CODE GOES HERE
